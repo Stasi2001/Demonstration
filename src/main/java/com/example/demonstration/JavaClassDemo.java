@@ -3,6 +3,7 @@ package com.example.demonstration;
 interface CodeDemonstrator {
     void makeCode();
 }
+
 class JavaClassDemo implements CodeDemonstrator {
     private final ClassNameGenerator classNameGenerator;
 
@@ -14,7 +15,7 @@ class JavaClassDemo implements CodeDemonstrator {
     public void makeCode() {
         String className = classNameGenerator.generateClassName();
         System.out.println("public class " + className + " {");
-        System.out.println("}");
+
     }
 
     interface ClassNameGenerator {
